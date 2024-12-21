@@ -16,7 +16,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.util.List;
 
 @RestController
-@RequestMapping("/admin")
+@RequestMapping("Api/admin")
 public class AdminDashBoardController {
 
     private final InstructorService instructorService;

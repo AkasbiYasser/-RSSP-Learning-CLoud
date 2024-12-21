@@ -11,7 +11,7 @@ import java.util.List;
 
 
 @RestController
-@RequestMapping("/user")
+@RequestMapping("Api/user")
 public class UserController {
 
     private final UserSevice userSevice;
