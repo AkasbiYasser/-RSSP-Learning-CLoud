@@ -47,7 +47,7 @@ function CourseForm({ data, ADD, CANCEL }) {
     e.preventDefault();
 
     try {
-      axios.post('https://rssplearning.tech/admin/courses', courseData);
+      axios.post('http://localhost:8080/admin/courses', courseData);
     } catch (error) {
       console.error('Error adding data:', error);
     }
@@ -59,7 +59,7 @@ function CourseForm({ data, ADD, CANCEL }) {
     e.preventDefault();
 
     try {
-      axios.put(`https://rssplearning.tech/admin/courses/${id}`, courseData);
+      axios.put(`http://localhost:8080/admin/courses/${id}`, courseData);
     } catch (error) {
       console.error('Error editing data:', error);
     }
@@ -75,7 +75,7 @@ function CourseForm({ data, ADD, CANCEL }) {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const val = await axios.get('https://rssplearning.tech/admin/categories');
+        const val = await axios.get('http://localhost:8080/admin/categories');
         setCategories(val.data);
       } catch (error) {
         console.error('Error fetching data:', error);
@@ -88,7 +88,7 @@ function CourseForm({ data, ADD, CANCEL }) {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const val = await axios.get('https://rssplearning.tech/admin/instructors');
+        const val = await axios.get('http://localhost:8080/admin/instructors');
         setInstructors(val.data);
       } catch (error) {
         console.error('Error fetching data:', error);
