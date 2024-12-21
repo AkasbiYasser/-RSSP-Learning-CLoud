@@ -1,7 +1,6 @@
 import styles from "./SessionsPage.module.css";
 
 import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
 import Cookies from "js-cookie";
 import axios from 'axios';
@@ -18,42 +17,42 @@ import { checkDateRange } from "../../utils/helpers";
 function SessionsPage() {
   const navigate = useNavigate();
   const [user, setUser] = useState();
-
   const [popup, setPopup] = useState(false);
   const [courses, setCourses] = useState([]);
 
   const closePopup = () => {
     setPopup(false);
-  }
+  };
 
   const open = (course) => {
-    if (checkDateRange(course.startDate, course.endDate) == 1) {
+    if (checkDateRange(course.startDate, course.endDate) === 1) {
       navigate(`/session/${course.id}`);
       return;
     }
-    
     setPopup(true);
-  }
+  };
 
   useEffect(() => {
     const userData = GetCookie("user");
 
-    const fetchData = async (userData) => {
-      try {
-        const val = await axios.get(`https://rssplearning.tech/Api/user/${userData.id}/courses`);
-        setCourses(val.data);
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    };
+    if (userData) {
+      const fetchData = async () => {
+        try {
+          const val = await axios.get(`https://rssplearning.tech/Api/user/${userData.id}/courses`);
+          setCourses(val.data);
+        } catch (error) {
+          console.error('Error fetching data:', error);
+        }
+      };
 
-    fetchData(userData);
-  }, [courses]);
+      fetchData();
+    }
+  }, []); // Removed `courses` from dependencies to prevent infinite loop
 
   const sortedCourses = () => {
-    //sort by ongoing first, soon second and ended last
+    //sort by ongoing first, soon second, and ended last
     return courses.sort((a, b) => checkDateRange(a.startDate, a.endDate) - checkDateRange(b.startDate, b.endDate));
-  }
+  };
 
   const GetCookie = (key) => {
     const cookieValue = Cookies.get(key);
@@ -73,20 +72,21 @@ function SessionsPage() {
       <div className={styles.container}>
         <div className={styles.sessions}>
           {sortedCourses().map((course) => (
-            <SessionCard key={course.id} course={course} pressed={()=>open(course)} />
+            <SessionCard key={course.id} course={course} pressed={() => open(course)} />
           ))}
         </div>
 
-        {popup &&
-          <PopUp title="Alerte"
+        {popup && (
+          <PopUp
+            title="Alerte"
             description="Le cours n’est pas valable pour l’instant. Veuillez patienter jusqu’à la date du cours."
-            OK={closePopup} />
-        }
-
+            OK={closePopup}
+          />
+        )}
       </div>
       <Footer />
     </>
-  )
+  );
 }
 
-export default SessionsPage
+export default SessionsPage;
