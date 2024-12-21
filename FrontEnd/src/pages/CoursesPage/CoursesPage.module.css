@@ -1,0 +1,57 @@
+.coursesContainer {
+    display: flex;
+    margin-top: 20px;
+    background-color: #e9f1ed;
+}
+
+.filters 
+{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 26%;
+    padding: 0 12px;
+}
+
+.subtitle
+{
+    margin: 10px 0;
+}
+
+.categoryList
+{
+    list-style: none;
+    margin: 20px 0;
+}
+
+.listItem
+{
+    padding: 5px 0;
+    padding-left: 16px;
+    cursor: pointer;
+}
+
+.listItem:hover
+{
+    background-color: rgb(233, 241, 237);
+}
+
+.priceContainer
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+/* Courses Section */
+
+.courses
+{
+    width: calc(74% - 24px);
+    padding: 25px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}

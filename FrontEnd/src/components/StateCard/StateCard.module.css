@@ -1,0 +1,32 @@
+.container {
+    text-align: center;
+    color: var(--white);
+    background-color: #dd9e29;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 200px;
+    padding: 20px;
+    aspect-ratio: 3/1;
+}
+
+.number 
+{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.title 
+{
+
+}
+
+.logo svg {
+    color: #ffffff8d;
+    width: 48px;
+    height: 48px;
+    padding-right: 15px;
+}

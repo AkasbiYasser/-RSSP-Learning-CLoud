@@ -1,0 +1,25 @@
+.container
+{
+    background-color: var(--white);
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    padding: 6px;
+    margin: 0 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.container:hover
+{
+    background-color: #dfdfdf6a;
+}
+
+.bold svg
+{
+    stroke-width: 3;
+}

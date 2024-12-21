@@ -1,0 +1,13 @@
+.container {
+    margin-top: 20px;
+    padding: 30px;
+    background-color: rgb(233, 241, 237);
+    height: 50vh;
+}
+
+.sessions
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}

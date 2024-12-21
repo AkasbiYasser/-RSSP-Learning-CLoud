@@ -1,0 +1,126 @@
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000050;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--white);
+    width: 1000px;
+    padding: 14px 8px;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cardTitle {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+/* Form */
+.formContainer
+{
+    display: flex;
+}
+
+.formLeft
+{
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+
+    margin-right: 5px;
+}
+
+.formRight
+{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 5px;
+}
+
+.container label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.container input,
+.container select {
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.formContainer textarea
+{
+    min-width: 620px;
+    max-width: 620px;
+    height: 200px;
+    min-height: 200px;
+    max-height: 250px;
+
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.container input[type="file"]{
+    width: calc(100% - 18px);
+}
+
+.container select {
+    width: 100%;
+    cursor: pointer;
+}
+
+.container button {
+    border-radius: 4px;
+}
+
+.dateContainer
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.imageHolder
+{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Buttons Container */
+.cardButtons {
+    margin-top: auto;
+    display: flex;
+    justify-content: end;
+}
+
+.cardOK {
+    width: 100%;
+}
+
+
+.cardCancel {
+    width: 100%;
+    margin-left: 8px;
+    background-color: var(--red);
+}
+
+.cardCancel:hover {
+    background-color: var(--dark-red);
+}

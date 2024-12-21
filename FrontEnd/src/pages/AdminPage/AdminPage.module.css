@@ -1,0 +1,81 @@
+.container
+{
+    background-color: rgb(233, 241, 237);
+}
+
+/* Navbar section */
+.navbar
+{
+    height: 60px;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
+}
+
+.navbar a
+{
+    font-size: 22px;
+    color: var(--blue);
+
+    display: flex;
+}
+
+.navbar img
+{
+    max-height: 2.5em;
+    width: auto;
+    object-fit: contain; /* Ensure the image fits nicely */
+}
+
+/* Body section */
+.body
+{
+    height: calc(100vh - 60px);
+    padding: 20px 100px;
+}
+
+.bodyContainer
+{
+    display: flex;
+}
+
+/* Sidebar section */
+.sidebar
+{
+    flex:1;
+    background-color: var(--white);
+    margin: 20px 0;
+    margin-right: 20px;
+    border-radius: 8px;
+    max-height: 184px;
+}
+
+.sidebar ul
+{
+    list-style: none;
+}
+
+.sidebar li
+{
+    padding: 10px;
+    padding-left: 30px;
+}
+
+.sidebar li:hover
+{
+    font-weight: bold;
+    border-left: 3px solid var(--dark-green);
+    cursor: pointer;
+}
+
+/* Outlet section */
+.outlet
+{
+    flex:6;
+    background-color: var(--white);
+    margin: 20px 0;
+    margin-left: 20px;
+    border-radius: 8px;
+}

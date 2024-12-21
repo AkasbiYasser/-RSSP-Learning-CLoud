@@ -1,0 +1,79 @@
+.container
+{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 25px;
+}
+
+.logo a {
+    font-size: 22px; /* Retain existing size */
+    color: var(--blue);
+    display: flex;
+}
+
+.logoImage {
+    max-height: 4em;
+    width: auto;
+    object-fit: contain; /* Ensure the image fits nicely */
+}
+
+
+.list ul
+{
+    display: flex;
+
+}
+
+.list li
+{
+    list-style-type: none;
+    margin: 0 20px;
+}
+
+.auth button
+{
+    margin: 0 5px;
+}
+
+/* Courses Panel Section */
+.panel
+{
+    text-align: center;
+    color: var(--white);
+    background-color: var(--light-purple);
+    width: 100%;
+    margin-top: 20px;
+    
+    position:relative;
+
+    display: flex;
+    justify-content: space-around;
+
+    overflow-x: auto;
+}
+
+.panel a
+{
+    color: var(--white);
+    padding: 5px 5px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.panel li:first-child a
+{
+    border-radius: 8px 8px 0 0;
+}
+
+.panel li:last-child a
+{
+    border-radius: 0 0 8px 8px;
+}
+
+.panel a:hover
+{
+    color: var(--white);
+    background-color: var(--dark-blue);
+}

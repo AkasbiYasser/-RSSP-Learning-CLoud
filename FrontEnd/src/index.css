@@ -1,0 +1,138 @@
+:root {
+  font-family: Cabin, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light;
+  color: #212121;
+  background-color: rgba(255, 255, 255, 0.87);
+
+  --white: #ffffff;
+  --gray: #9e9e9e;
+  --dark-gray: #717171;
+  --cyan: #26e8bd;
+  --green: #127c71;
+  --dark-green: #126c63;
+  --yellow: #ffaf35;
+  --dark-yellow: #e49c30;
+  --pink: #f303ff;
+  --purple: #551a8b;
+  --red: #ed1749;
+  --dark-red: #c0183f;
+  --light-purple:#c2b8ff;
+  --light-blue:#56b0e5;
+  --blue: #0a67a9;
+  --dark-blue: #101953;
+  --black: #0000001f;
+
+  --alert-red: #fd2255;
+  --alert-yellow: #edbb17;
+  --alert-green: #09c0ae;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  font-weight: 500;
+  color: var(--gray);
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--dark-blue);
+}
+
+input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* Buttons */
+
+button {
+  border-radius: 10px;
+  border: 1px solid transparent;
+  padding: 0.4em 1em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  color: var(--white);
+  background-color: var(--dark-blue);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: var(--light-purple);
+}
+
+.btn-v2{
+  color: var(--dark-blue);
+  background-color: var(--white);
+  border: 2px solid var(--dark-blue);
+}
+
+.btn-v2:hover{
+  background-color: var(--black);
+}
+
+.btn-warning{
+  background-color: var(--red);
+}
+
+.btn-warning:hover{
+  background-color: var(--dark-red);
+}
+
+.btn-info{
+  color: var(--red);
+  background-color: var(--white);
+  border: 2px solid var(--red);
+}
+
+.btn-info:hover{
+  background-color: var(--black);
+}
+
+.green
+{
+  color: var(--dark-blue);
+}

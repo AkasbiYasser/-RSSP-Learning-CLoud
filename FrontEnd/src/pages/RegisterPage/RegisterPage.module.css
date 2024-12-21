@@ -1,0 +1,42 @@
+.registrationContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+
+    background-image: url('/src/assets/images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.registrationContainer h1
+{
+    text-align: center;
+    color: var(--dark-blue);
+    margin-bottom: 15px;
+}
+
+.registrationForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 300px;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
+}
+
+.info
+{
+    font-size: 14px;
+    text-align: center;
+}
+
+.info a
+{
+    color: var(--blue);
+}

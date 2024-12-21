@@ -1,0 +1,68 @@
+.container {
+    padding: 20px 126px;
+}
+
+.main {
+    flex: 5;
+    padding-right: 20px;
+}
+
+.courseImage {
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.descriptionContainer
+{
+    border: 0 !important;
+    height: max-content !important;
+}
+
+/* Video Container */
+.courseVideo
+{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    aspect-ratio: 16/9;
+}
+
+.courseVideo h3
+{
+    margin-bottom: 10px;
+}
+
+/* Course Buttons */
+.courseDirectContainer
+{
+    display: flex;
+}
+.courseImage
+{
+    width: 480px;
+}
+
+.courseButtons
+{
+    padding-top: 16px;
+    padding-left: 20px;
+}
+
+.button
+{
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* No content is available */
+.fallbackMessage span
+{
+    color: var(--dark-dark);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.fallbackMessage img
+{
+    width: 220px;
+}

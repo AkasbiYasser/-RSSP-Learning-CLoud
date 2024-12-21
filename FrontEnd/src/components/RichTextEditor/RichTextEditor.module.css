@@ -1,0 +1,8 @@
+.menuBar
+{
+  display: flex;
+
+  border: 1px solid #00000040;
+  border-bottom: none;
+  border-radius: 8px 8px 0 0;
+}

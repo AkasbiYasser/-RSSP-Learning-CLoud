@@ -1,0 +1,49 @@
+.container {
+  background-color: #ffffff;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  padding: 4px;
+
+  display: flex;
+  cursor: pointer;
+}
+.container:hover
+{
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Section */
+
+.image
+{
+  height: 120px;
+  width: 120px;
+  border: 1px solid #00000040;
+  border-radius: 6px;
+
+  display: flex;
+}
+.image img
+{
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* Info Section */
+.info
+{
+  padding: 4px 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.status
+{
+  width: 100%;
+
+  display: flex;
+  justify-content: end;
+}

@@ -1,0 +1,74 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    height: 70vh;
+    background-color: #f4f4f9;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    padding: 20px 0;
+
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+
+.profilePicContainer {
+    flex: 3;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profilePic {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 8px 0;
+}
+
+.userDetails {
+    flex: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.userName {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.userDetail {
+    font-size: 1rem;
+    color: #666;
+    margin: 5px 0;
+}
+
+.input
+{
+    font-size: 1rem;
+    color: var(--dark-blue) !important;
+    margin: 5px 0;
+    background-color: #e9f1ed !important;
+    border: 0 !important;
+    outline: none;
+}
+
+.userdata{
+    background-color: #e9f1ed;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-left: 10px;
+    padding-right: 10px;
+}

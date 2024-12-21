@@ -1,0 +1,66 @@
+.container
+{
+    display: flex;
+    padding-top: 50px;
+}
+
+.info
+{
+    flex: 1;
+    margin-top: 150px;
+    margin-left: 180px;
+    margin-right: 20px;
+}
+
+.info h1
+{
+    font-size: 52px;
+}
+
+.title
+{
+    position: relative;
+}
+
+.title img
+{
+    position: absolute;
+    top: 65px;
+    width: 200px;
+}
+
+.info p
+{
+    padding: 30px 0;
+    width: 80%;
+}
+
+.buttons
+{
+    margin-top: 10px;
+}
+
+.buttons button
+{
+    padding: 0.7em 1em;
+    margin-right: 12px;
+}
+
+/* Image Section */
+
+.image
+{
+}
+
+.image img
+{
+    width: 600px;
+}
+
+/* Info Section */
+
+.infoCard
+{
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,52 @@
+.container
+{
+    display: flex;
+    justify-content: center;
+}
+
+.image
+{
+    flex: 1;
+    text-align: center;
+}
+
+.image img
+{
+    width: 36vw;
+}
+
+.info
+{
+    flex: 1;
+}
+
+.info h2
+{
+    font-size: 38px;
+}
+
+.title img
+{
+    position: relative;
+    left: 20px;
+    width: 200px;
+}
+
+.info p
+{
+    margin: 25px 0;
+    width: 80%;
+}
+
+.grid
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+@media (max-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }

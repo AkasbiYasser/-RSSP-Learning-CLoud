@@ -1,0 +1,24 @@
+.container
+{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.container a
+{
+    font-size: 34px;
+    color: var(--blue);
+}
+
+.logo
+{
+    display: flex;
+}
+
+.logoImage {
+    max-height: 3em;
+    width: auto;
+    object-fit: contain;
+}
+

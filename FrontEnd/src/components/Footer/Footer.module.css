@@ -1,0 +1,72 @@
+.container
+{
+    color: var(--blue);
+    background-color: var(--white);
+    display: flex;
+}
+
+.about
+{
+    flex: 1;
+    padding: 80px 60px;
+    padding-left: 160px;
+}
+
+.info{
+    padding: 0 8px;
+}
+
+.info p{
+    font-size: 16px;
+    padding: 20px 0;
+}
+
+.more{
+    flex: 2;
+    padding: 80px 0;
+    padding-right: 160px;
+    
+    display: flex;
+    justify-content: space-around;
+}
+
+.more ul
+{
+    margin-top: 16px;
+}
+
+.more li
+{
+    list-style-type: none;
+}
+
+.more a:hover
+{
+    color: var(--blue);
+}
+
+.social ul
+{
+    display: flex;
+}
+
+.social li
+{
+    list-style-type: none;
+    padding-right: 8px;
+    
+}
+
+.social img
+{
+    height: 22px;
+    width: 22px;
+    padding: 6px;
+    
+}
+
+.social img:hover
+{
+    background-color: var(--dark-blue);
+    border-radius: 50%;
+}

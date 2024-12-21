@@ -1,0 +1,22 @@
+.container
+{
+    text-align: center;
+    margin-bottom: 50px;
+    background-color: rgb(233, 241, 237);
+}
+
+.title
+{
+    background-color: #fff;
+    padding-bottom: 36px;
+}
+
+.title h2
+{
+    font-size: 32px;
+}
+
+.courseCardWrapper
+{
+    margin: 10px;
+}

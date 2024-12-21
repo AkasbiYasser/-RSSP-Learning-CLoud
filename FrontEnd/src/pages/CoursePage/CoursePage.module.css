@@ -1,0 +1,120 @@
+.container {
+    padding: 20px 126px;
+
+    display: flex;
+}
+
+.main {
+    flex: 5;
+    padding-right: 20px;
+}
+
+.courseImage {
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.descriptionContainer
+{
+    border: 0 !important;
+    height: max-content !important;
+}
+
+.side {
+    flex: 2;
+    background-color: rgb(233, 241, 237);
+    border-radius: 8px;
+}
+
+.enrollCard,
+.intructorCard,
+.quizCard {
+    background-color: var(--white);
+    padding: 14px;
+    margin: 8px;
+    border-radius: 8px;
+}
+
+.enrollCard
+{
+    text-align: center;
+}
+
+/* Course price */
+.coursePrice {
+    font-size: 1rem;
+    color: #007bff;
+    margin: 8px 0;
+}
+
+/* Course rating */
+.courseRating {
+    font-size: 1rem;
+    color: #f1c40f;
+    margin: 8px 0;
+}
+
+.courseButton
+{
+    margin-top: 10px;
+    margin-bottom: 2px;
+    width: 100%;
+}
+
+/* Instructor Card */
+.intructorCard
+{
+}
+
+
+.intructorInfo
+{
+    display: flex;
+    align-items: center;
+    margin: 14px 0;
+}
+
+.intructorImageContainer
+{
+    background-color: var(--white);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.intructorImage
+{
+    width: 100%;
+}
+
+.intructorName
+{
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.intructorTagline
+{
+    font-size: 11px;
+    font-style: italic;
+}
+/* Quiz Card */
+.quizCard p
+{
+    margin: 10px 0;
+}
+
+/* Video Container */
+.courseVideo
+{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    aspect-ratio: 16/9;
+}
+
+.courseVideo h3
+{
+    margin-bottom: 10px;
+}
