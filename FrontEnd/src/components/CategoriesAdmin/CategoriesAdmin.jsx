@@ -38,7 +38,7 @@ function CategoriesAdmin() {
     setFormOpen(false);
   }
 
-  const onCancel = () => {
+  const onCancel = () => { 
     setScroll(true);
     setFormOpen(false);
   }
