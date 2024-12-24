@@ -29,7 +29,7 @@ function Header() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const val = await axios.get('https://rssplearning.tech/Api/admin/categories');
+        const val = await axios.get('http://rssplearning.tech/Api/admin/categories');
         setCategories(val.data);
       } catch (error) {
         console.error('Error fetching data:', error);

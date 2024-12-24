@@ -25,7 +25,7 @@ function InstructorForm({ data, ADD, CANCEL }) {
     e.preventDefault();
 
     try {
-      axios.post('https://rssplearning.tech/Api/admin/instructors', instructorData);
+      axios.post('http://rssplearning.tech/Api/admin/instructors', instructorData);
     } catch (error) {
       console.error('Error adding data:', error);
     }
@@ -37,7 +37,7 @@ function InstructorForm({ data, ADD, CANCEL }) {
     e.preventDefault();
 
     try {
-      axios.put(`https://rssplearning.tech/Api/admin/instructors/${id}`, instructorData);
+      axios.put(`http://rssplearning.tech/Api/admin/instructors/${id}`, instructorData);
     } catch (error) {
       console.error('Error editing data:', error);
     }
