@@ -17,7 +17,7 @@ public class CorsConfig {
 
         // Autoriser les origines nécessaires
         config.setAllowedOriginPatterns(List.of(
-            "http://rssplearning.tech",
+            "https://rssplearning.tech",
             "http://localhost:8080",
             "http://*.rssplearning.tech",
             "https://*.rssplearning.tech",

@@ -29,7 +29,7 @@ function CoursesAdmin() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const val = await axios.get('http://rssplearning.tech/Api/admin/courses');
+        const val = await axios.get('https://rssplearning.tech/Api/admin/courses');
         setCourses(val.data);
       } catch (error) {
         console.error('Error fetching data:', error);
@@ -81,7 +81,7 @@ function CoursesAdmin() {
   const onDelete = async (id) => {
     console.log(id);
     try {
-      await axios.delete(`http://rssplearning.tech/Api/admin/courses/${id}`);
+      await axios.delete(`https://rssplearning.tech/Api/admin/courses/${id}`);
     } catch (error) {
       console.error('Error deleting data:', error);
     }
