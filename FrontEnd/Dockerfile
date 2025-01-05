@@ -18,11 +18,7 @@ RUN yarn build
 
 # Étape de production
 FROM node:18
-
-WORKDIR /app
-
-# Copier les fichiers construits depuis l'étape de construction
-COPY --from=build /app/dist /app/dist
+WORKDIR /app  COPY --from=build /app/dist /app/dist
 
 # Ajouter un simple serveur express pour servir les fichiers statiques
 RUN npm install express
@@ -32,6 +28,4 @@ RUN echo "const express = require('express'); const path = require('path'); cons
 
 # Exposer le port 3000
 EXPOSE 3000
-
-# Commande par défaut pour démarrer le serveur Express
 CMD ["node", "server.js"]
