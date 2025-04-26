@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: pfsacr.azurecr.io/frontend:latest
+        image: us-east1-docker.pkg.dev/mystical-method-457610-m6/acr-registry/frontend:latest
         ports:
         - containerPort: 3000
       imagePullSecrets:

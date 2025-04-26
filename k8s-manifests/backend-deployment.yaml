@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: pfsacr.azurecr.io/backend:latest
+        image: us-east1-docker.pkg.dev/mystical-method-457610-m6/acr-registry/frontend:latest
         ports:
         - containerPort: 8080
         env:
